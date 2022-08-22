@@ -10,10 +10,10 @@ This is a sample project to start with Facebook authentication using nodeJS.
 ### How to start 
 
 1. Clone the repository
-2. Go to the directory `LinkedinLoginPassport`
+2. Go to the directory `linkedin-login-OAuth1.0a`
 
 ```
-cd LinkedinLoginPassport\
+cd linkedin-login-OAuth1.0a\
 ```
 3. Enter the follwoing command 
 
@@ -27,17 +27,22 @@ module.exports = {
   'linkedinAuth': {
     'clientID': '<CLIENT_ID>', // your App ID 
     'clientSecret': '<CLIENT_SECRET>', // your App Secret
-    'callbackURL': 'http://localhost:3000/auth/linkedin/callback'
+    'callbackURL': 'http://localhost:8080/auth/linkedin/callback'
   }
 }
-
+ 
+``````
+Or create .env file with the environment variables:
+`````` JS
+LINKEDIN_APP_CLIENT_ID='<CLIENT_ID>'
+LINKEDIN_APP_CLIENT_SECRET='<CLIENT_SECRET>'
 ``````
 5. Then run the follwoing command in your terminal
 
 ```
 npm start
 ```
-6. Open the link [http://localhost:3000](http://localhost:3000)
+6. Open the link [http://localhost:8080](http://localhost:8080)
 
 
 
